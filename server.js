@@ -1,3 +1,5 @@
+//using heroku postgress database hosting 
+//for usage first configure heroku database 
 require('dotenv').config()
 const express = require('express')
 const bodyparser = require('body-parser')
