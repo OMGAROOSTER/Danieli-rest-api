@@ -1,0 +1,10 @@
+const express = require('express')
+const router = express.Router()
+const prodottoController = require('../../Database/services/PgServices')
+router.route('/prodotto')
+    .get(prodottoController.getAcciaio)
+    .put(prodottoController.updateAcciaio)
+router.route('/prodotto/:id')
+    .get(prodottoController.getProdottoById)
+    .delete(prodottoController.deleteProdotto)
+module.exports = router
